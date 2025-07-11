@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="border-t border-gray-600 py-12 text-white">
+    <footer className="py-12 text-white border-t border-gray-600">
       <div className="w-[96%] max-w-screen-lg mx-auto flex flex-row justify-between">
         <div className="flex items-center">
           <Link
@@ -16,21 +16,19 @@ export const Footer = () => {
             alt="plinkoo Logo"
           /> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Plinkoo.100x
+              Plinko.kp
             </span>
           </Link>
         </div>
         <div>
           <div className="space-y-2">
-            <h1 className="text-center text-lg">Follow On</h1>
+            <h1 className="text-lg text-center">Follow On</h1>
             <div className="flex items-center gap-3">
-              <a href="https://github.com/hkirat" target="_blank">
+              <a href="https://github.com/karanpreetsingh462" target="_blank">
                 <FaGithub size={30} />
               </a>
-              <a href="https://www.youtube.com/@harkirat1" target="_blank">
-                <FaYoutube size={30} />
-              </a>
-              <a href="https://twitter.com/kirat_tw" target="_blank">
+              
+              <a href="https://x.com/__karanpreet" target="_blank">
                 <FaTwitter size={30} />
               </a>
             </div>
