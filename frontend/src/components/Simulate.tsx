@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import { BallManager } from "../game/classes/BallManager";
 import { pad } from "../game/padding";
@@ -20,7 +20,7 @@ export const Simulate = () => {
     if (canvasRef.current) {
       const ballManager = new BallManager(
         canvasRef.current as unknown as HTMLCanvasElement,
-        (index: number, startX?: number) => {
+        () => {
           // setOutputs((outputs: any) => { // This line was removed
           //   return {
           //     ...outputs,

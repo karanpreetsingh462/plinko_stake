@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { BallManager } from "../game/classes/BallManager";
 import { WIDTH } from "../game/constants";
 import { pad } from "../game/padding";
-import { useNavigate } from "react-router-dom";
 import { Simulate } from "../components/Simulate";
 import { Quotes, FoundIssue } from "../components";
 
@@ -22,7 +21,7 @@ export function Home() {
     if (canvasRef.current) {
       const ballManager = new BallManager(
         canvasRef.current as unknown as HTMLCanvasElement,
-        (index: number, startX?: number) => {
+        () => {
           // setOutputs((outputs: any) => { // This line was removed
           //   return {
           //     ...outputs,
